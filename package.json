@@ -1,0 +1,63 @@
+{
+	"name": "@verbex-ai/verbex-js-sdk",
+	"version": "1.0.0",
+	"description": "Verbex Javascript SDK for building web-based voice AI applications with Verbex AI Agents",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"unpkg": "./dist/index.umd.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap",
+		"prepublishOnly": "npm run build",
+		"prepare": "npm run build",
+		"test": "echo \"Error: no test specified\" && exit 0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/verbex-ai/verbex-js-sdk.git"
+	},
+	"homepage": "https://github.com/verbex-ai/verbex-js-sdk#readme",
+	"bugs": {
+		"url": "https://github.com/verbex-ai/verbex-js-sdk/issues"
+	},
+	"keywords": [
+		"typescript",
+		"verbex",
+		"ai",
+		"agents",
+		"voice",
+		"communication",
+		"web",
+		"client",
+		"sdk",
+		"package"
+	],
+	"author": "verbex.ai",
+	"license": "ISC",
+	"publishConfig": {
+		"access": "public"
+	},
+	"sideEffects": false,
+	"dependencies": {
+		"eventemitter3": "^5.0.1",
+		"livekit-client": "^2.16.1"
+	},
+	"devDependencies": {
+		"@types/node": "^25.0.3",
+		"microbundle": "^0.15.1",
+		"typescript": "^5.3.3"
+	},
+	"engines": {
+		"node": ">=16"
+	}
+}

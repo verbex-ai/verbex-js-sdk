@@ -1,0 +1,9 @@
+src/
+tsconfig.json
+.github/
+*.log
+.DS_Store
+node_modules/
+coverage/
+*.md
+!README.md
