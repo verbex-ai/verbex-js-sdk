@@ -49,6 +49,24 @@ await client.initiateSession({
 });
 ```
 
+## Examples
+
+Check out our [examples repository](https://github.com/verbex-ai/verbex-js-sdk-examples) for complete implementation examples:
+
+| Framework | Description | Link |
+|-----------|-------------|------|
+| Vanilla JavaScript | Pure JavaScript implementation with no framework dependencies | [View Example](https://github.com/verbex-ai/verbex-js-sdk-examples/tree/main/vanilla-js) |
+| React | React integration with hooks and component patterns | [View Example](https://github.com/verbex-ai/verbex-js-sdk-examples/tree/main/react) |
+| Vue | Vue.js implementation with composition API | [View Example](https://github.com/verbex-ai/verbex-js-sdk-examples/tree/main/vue) |
+| Next.js | Next.js App Router implementation with SSR support | [View Example](https://github.com/verbex-ai/verbex-js-sdk-examples/tree/main/nextjs) |
+
+Each example includes:
+- Basic voice chat implementation
+- Audio visualization
+- Transcript display
+- Device selection UI
+- Error handling patterns
+
 ## API Reference
 
 ### VerbexWebClient
@@ -326,15 +344,6 @@ import {
 - Opera 62+
 
 Requires WebRTC and Web Audio API support.
-
-## Examples
-
-Check out the [examples repository](https://github.com/verbex-ai/verbex-js-sdk-examples) for complete usage examples including:
-
-- Basic voice chat implementation
-- Audio visualization
-- Transcript display
-- Device selection UI
 
 ## Development
 
